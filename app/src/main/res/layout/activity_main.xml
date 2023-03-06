@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editext1"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editext3"
+        app:layout_constraintStart_toStartOf="@+id/editext3" />
+
+    <EditText
+        android:id="@+id/editext2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:hint="DayBorn"
+        app:layout_constraintBottom_toTopOf="@+id/editext4"
+        app:layout_constraintEnd_toEndOf="@+id/editext4" />
+
+    <EditText
+        android:id="@+id/editext3"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:hint="Midname"
+        app:layout_constraintBottom_toTopOf="@+id/editext5"
+        app:layout_constraintStart_toStartOf="@+id/editext5" />
+
+    <EditText
+        android:id="@+id/editext4"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:hint="MonthBorn"
+        app:layout_constraintBottom_toTopOf="@+id/editext6"
+        app:layout_constraintEnd_toEndOf="@+id/editext6" />
+
+    <EditText
+        android:id="@+id/editext6"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="56dp"
+        android:hint="YearBorn"
+        app:layout_constraintBottom_toTopOf="@+id/editext7"
+        app:layout_constraintStart_toEndOf="@+id/editext7" />
+
+    <EditText
+        android:id="@+id/editext5"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:hint="Lastname"
+        app:layout_constraintBottom_toTopOf="@+id/editext7"
+        app:layout_constraintStart_toStartOf="@+id/editext7" />
+
+    <EditText
+        android:id="@+id/editext7"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="65dp"
+        android:hint="Class"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:text="SEARCH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:hint=" Subject"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
