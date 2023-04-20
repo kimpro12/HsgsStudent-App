@@ -1,3 +1,3 @@
 # HsgsStudent
 
-Hsgs Student Management but it is a app
+Hsgs Student Management but it is on app
